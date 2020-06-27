@@ -4,21 +4,101 @@
         <meta charset="utf-8">
         <title>Assignment Module 2</title>
         <style>
+            * {
+                font-family: sans-serif;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
             h1 {
-                text-align: center solid black;
-                ;
+                text-align: center;
+                padding: 25px;
+            }
+            p {
+                color: black;
+                font-size: 14px;
+            }
+            .boxing {
+                background-color: grey;
+                border: 1px solid black;
+                float: left;
+                margin: 6px;    
+                text-align: center;            
+            }
+            .submenu {
+                float: right;
+                border: 1px solid black;
+                width: 100px;
+                padding: 5px 12px 5px 12px;
+                position:relative;
+                text-align: center;
+            }
+            .content {
+                text-align: left;
+                padding: 5px;
+                clear: both;
+            }
+            #bigbox {
+                position: relative;
+                width: 100%;
+            }
+            #chicken-cont {
+                background-color: burlywood;
+            }
+            #beef-cont {
+                background-color: chartreuse;
+            }
+            #sushi-cont {
+                background-color: pink;
+            }
+            @media(min-width: 992px) {
+                .boxing {
+                    width: 30%;
+                    float: left;
+                }
+                #chicken {
+                    float: left;
+                }
+                #beef {
+                    float: center;
+                    margin-left: 1em;
+                }
+                #sushi {
+                    float: right;
+                }
+                
+            }
+            @media(min-width: 768px) and (max-width: 991px) {
+               #chicken, #beef  {
+                width: 48.5%;
+               }
+               #sushi {
+                width: 98.5%;
+               }
             }
         </style>
     </head>
     <body>
         <h1>Our Menu</h1>
-        <div>
-            <div>
-                <p></p>
-                <p></p>
+        <div id="bigbox">
+            <div class="boxing" id="chicken">
+                <p class="submenu" id="chicken-cont">Chicken</p>
+                <p class="content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, quo, accusantium animi ipsa at libero voluptatibus, repellat quasi reiciendis ex debitis est cupiditate cumque voluptatem voluptatum assumenda eaque neque velit?
+                </p>
             </div>
-            <div></div>
-            <div></div>
+            <div class="boxing" id="beef">
+                <p class="submenu" id="beef-cont">Beef</p>
+                <p class="content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, quo, accusantium animi ipsa at libero voluptatibus, repellat quasi reiciendis ex debitis est cupiditate cumque voluptatem voluptatum assumenda eaque neque velit?
+                </p>
+            </div>
+            <div class="boxing" id="sushi">
+                <p class="submenu" id="sushi-cont">Sushi</p>
+                <p class="content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, quo, accusantium animi ipsa at libero voluptatibus, repellat quasi reiciendis ex debitis est cupiditate cumque voluptatem voluptatum assumenda eaque neque velit?
+                </p>
+            </div>
         </div>
     </body>
 </html>
