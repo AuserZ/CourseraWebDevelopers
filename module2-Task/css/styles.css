@@ -29,7 +29,7 @@ p {
 
 .submenu {
   float: right;
-  order: 1px solid black;
+  border: 1px solid black;
   width: 100px;
   padding: 5px 12px 5px 12px;
   position: relative;
@@ -40,7 +40,7 @@ p {
 
 .content {
   text-align: left;
-  adding: 5px;
+  padding: 5px;
   clear: both;
 }
 
